@@ -47,7 +47,7 @@ def radius_ED(t, E, n0, mej):
 def Ekin_Mej_RadiusConstraint_G19(rad=1.0, density=0.01, age=140., epse=1.0e-4, pp=2.2, freq=1.4e9):
 
     e51array = np.logspace(-1,1,800)
-    mejarray = np.linspace(0.2, 2.0, 800)
+    mejarray = np.linspace(0.1, 2.0, 800)
     y_e51 = np.zeros(mejarray.size)
     for i, mej in enumerate(mejarray):
         rad_mej = np.zeros(e51array.size)
@@ -62,7 +62,7 @@ def Ekin_Mej_RadiusConstraint_G19(rad=1.0, density=0.01, age=140., epse=1.0e-4, 
 def Ekin_Mej_VelocityConstraint_G19(vel=1.0, density=0.01, age=140., epse=1.0e-4, pp=2.2, freq=1.4e9):
 
     e51array = np.logspace(-1,1,800)
-    mejarray = np.linspace(0.2, 2.0, 800)
+    mejarray = np.linspace(0.1, 2.0, 800)
     y_e51 = np.zeros(mejarray.size)
     for i, mej in enumerate(mejarray):
         vel_mej = np.zeros(e51array.size)
@@ -76,7 +76,7 @@ def Ekin_Mej_VelocityConstraint_G19(vel=1.0, density=0.01, age=140., epse=1.0e-4
 def Ekin_Mej_LumConstraint_G19(lum_obs=1.0e24, density=0.01, age=140., epse=1.0e-4, pp=2.2, freq=1.4e9):
 
     e51array = np.logspace(-1,1,800)
-    mejarray = np.linspace(0.2, 2.0, 800)
+    mejarray = np.linspace(0.1, 2.0, 800)
     y_e51 = np.zeros(mejarray.size)
     for i, mej in enumerate(mejarray):
         lum = np.zeros(e51array.size)
